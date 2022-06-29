@@ -2,7 +2,7 @@
   width: 225px;
   height: 120px;
   background-color: #141414;
-  margin-right: 5px;
+  /* margin-right: 5px; */
   overflow: hidden;
   cursor: pointer;
   color: white;
@@ -35,6 +35,9 @@
 }
 .listItem:hover img {
   height: 140px;
+}
+.listItem:hover video {
+  height: 100px;
 }
 
 .listItem:hover .itemInfo {

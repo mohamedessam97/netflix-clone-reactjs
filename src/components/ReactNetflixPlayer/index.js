@@ -89,11 +89,8 @@ export default function ReactNetflixPlayer({
   const timerBuffer = useRef(null);
   const playerElement = useRef(null);
   const listReproduction = useRef(null);
-  // const m="https://abra--a2376523.api.webtor.buzz/320ea235ad6cee4415b4e3fb4d4a4bb1ba99b659/Fantastic%20Beasts%20The%20Secrets%20Of%20Dumbledore%20(2022)%20%5B720p%5D%20%5BWEBRip%5D%20%5BYTS.MX%5D%2FFantastic.Beasts.The.Secrets.Of.Dumbledore.2022.720p.WEBRip.x264.AAC-%5BYTS.MX%5D.mp4~tc/Fantastic.Beasts.The.Secrets.Of.Dumbledore.2022.720p.WEBRip.x264.AAC-%5BYTS.MX%5D.mp4~mtrc/v0-240.m3u8?user-id=8b8b24aff36ca03b5d38757353cbe3f7&download-id=b06d14408ef8d3e686518e0a9212c3ac&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMDIuMC41MDA1LjYzIFNhZmFyaS81MzcuMzYiLCJyZW1vdGVBZGRyZXNzIjoiMTU2LjIyMC4xOTAuMTQzIiwiZG9tYWluIjoieXRzLm14IiwiZXhwIjoxNjU0ODY1OTQ4LCJzZXNzaW9uSUQiOiI3ODd6LVltREtxeUxxcHhObUwyVG54Qi1nWDdvdDJZNyIsInJhdGUiOiIxME0iLCJyb2xlIjoibm9ib2R5In0.letJ3NAtEe8SGeX8SJxaaiA4Nw7jMneIgdIMFL2WHrw&api-key=8acbcf1e-732c-4574-a3bf-27e6a85b86f1"
-  // const  m ="https://znnryuuefdx769extvqa.vs7000.pics/watch/46ee29f27e602833uL3Rif8AB9gzKSuSQ.QdSCNaUBVUko9toPAv-WeA__.aUh6QTFRYk1OdGtacVJGZDBFMWZIalVNSDFyT1ZFRElhNmI2YllnSlpsa0ZqSEZ4c1dkTDAvY1h1eXVTbEJlSkd3U1BVQ3IyWUVJQXVDdFpVOU1FdVJucDBVTklHWkFmZzhTcG9mV1I4UDJ6RHJTaUd0c3RLVVp3THBESWc5MktUR0tBTTdBUXA1YjVITGNvcXhVQ0QxbWh3aXgxaTRRME11YlRpd1NpWDB6TFF2b016KzFpZ3dtRE54dVFMSi9yTFI1UVpzdDFGbzZremorWjB2MkJBTkhEcnJoMWYvVjFxNDYvUVE2Y3RwbTYyRHB3YmJNMlhJL0NPS1ozeDVJTWh3MVR4R1p5SjFzejE4OStEeDlkeEpQaVUyWDlwWWhldEtISWx6eU1NNzlsZ0F6RUM3eS8vcldqTVh3dXIvWUxXMEwvSEJVeFJJLzFpeGlJaldxQVd1RDZQWW40L2oySWpPcGFvMktuQkNlU3pBQktMK3lza0YwUGJvTzg0emNhOFNaRzNJdEFON0FMQWY5ZFcrK3NidGx6SnpJYzNhVFM_"
-// const m ="https://abra--8ac92139.api.webtor.buzz/959959f8a3cc66cefd238814d107a96864c06ab4/Independence%20Day%20(1996)%20720p.BRRip.x264.YIFY.mkv%2FIndependence%20Day%20(1996)%20720p.BRRip.x264.YIFY.mkv.mkv~tc/Independence%20Day%20(1996)%20720p.BRRip.x264.YIFY.mkv.mkv~hls/v0-544.m3u8?user-id=beb68077ae4a69bcd3efdae601ab4834&download-id=644c758a8f9ff507e107f8e752e86e68&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMDIuMC41MDA1LjYzIFNhZmFyaS81MzcuMzYiLCJyZW1vdGVBZGRyZXNzIjoiMTU2LjIyMC4xNy4xNTkiLCJkb21haW4iOiJ5dHMubXgiLCJleHAiOjE2NTUxMzQ3MzMsInNlc3Npb25JRCI6ImxWN3VSVW9HMGhVNy1idGFMNEJTOERMaXlnQi1MLUlaIiwicmF0ZSI6IjEwTSIsInJvbGUiOiJub2JvZHkifQ.liW2UZmJRhXqeR3th_yLfLBuwFt2yEoU_kzuRUXmfqY&api-key=8acbcf1e-732c-4574-a3bf-27e6a85b86f1"
-  const m = "https://ylkicsxzagsh2iutopxb.vs7000.pics/watch/e498dcc2b94441d3qmOZyqBC7JLmAg938.%7CxSBY7IT47p4kGnQhr68bg__.NXBBbUI0Q05xN0pPbDFyakxNRmthNEcwMUhOSEl1UjM5UlpHOE1vUTZWZE9WLzhmNE5yNEQrVFptdmVHUkt4Q21uN21JT2g3WW94Q0pYZWlSU0syU25WVzcvcnNYOTdvSk4vOHA2bG1mUzlTWGIvVitISG1MNVFsZXB3b2UwSDVhYmxaQ2FvRVFrbVJLNjNQdEQ4VkRCb0d1WVp5R3R1S3BiUWE4bnVDNzl5YTU4QmNYYTlZNFlQUWFUekJQUldML1JpNXhWcEYyTHZ1OHVPbEhkUUVCdXQzZml1QitYd2k1bG1PSWIxRVQvMzhjZ0t2ckFxcnhsb2NSOGVsUWhMQTV6MGU0dkNhNkV0UE56MWhFeE9qb3h6bEIwSVN3aFRjS01KendNWnNCUVdtcWp3b2p5d1UrRXBuNDJRc00zMUhLM3VaNGIxRHNsMjRZdzlFUEJPUDNiNDZ3R215aHV4YWpHNDMvTjRDSXN6YThyMW5oUGFGbjVXRGNrSklnL0JMYWx0WVNmWnA1aVVqYXlsQ0VwZUZEWnRENUxOenM1QnZscDVPUzRzSEYxS3E4ZjJxWElHUWJqTlFiU1Y5eVBENG1kYnN1QkRDK3ZyOStQMm5YU2E3NzdTRjBraDlIYmhMbURXRnp3PT0_"
-// Estados
+  const m = 'https://firebasestorage.googleapis.com/v0/b/movie-app-889ee.appspot.com/o/video%2FMIKE.mp4?alt=media&token=cb1bdec1-1948-49eb-ac82-7fb71fa154c0'
+  // Estados
   const [videoReady, setVideoReady] = useState(false);
   const [playing, setPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -552,7 +549,7 @@ export default function ReactNetflixPlayer({
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <video
         ref={videoComponent}
-        src={m}
+        src={src}
         controls={false}
         onCanPlay={() => startVideo()}
         onTimeUpdate={timeUpdate}

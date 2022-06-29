@@ -16,6 +16,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import useScrollTrigger from "@mui/material/useScrollTrigger"
+import img1 from '../../assests/Polygon 1.png'
+import img2 from '../../assests/STRIMIX.png'
 
 const pages = ['Home', 'Tv Shows', 'Movies', 'My List'];
 const settings = ['Profiles', 'Manage Profiles', 'Exit Profile', 'Account', 'Sign out'];
@@ -67,7 +69,7 @@ function AppBarS({children}){
     
     return (
             <AppBar sx={{
-                backgroundColor: trigger? "#0A0A0A":'transparent'
+                backgroundColor: trigger? "#0A0D18":'transparent'
             }}>
                 {children}
             </AppBar>
@@ -112,7 +114,8 @@ const Navbar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        NETFLIX
+                        <img src={img1} alt="" />
+                        <img src={img2} alt="" />
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
